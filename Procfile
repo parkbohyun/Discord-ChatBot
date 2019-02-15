@@ -1,1 +1,1 @@
-worker: python SNINC.py
+worker: python SAINC.py
