@@ -1,36 +1,21 @@
 import discord
-
 import asyncio
-
 import random
-
 import openpyxl
 
 from discord import Member
-
 from discord.ext import commands
-
-
 from urllib.request import urlopen, Request
 
 import urllib
-
 import urllib.request
-
 import bs4
-
-
 import os
-
 import sys
-
 import json
-
 import time
 
-
 client = discord.Client()
-
 
 @client.event
 async def on_member_join(member):
@@ -41,17 +26,12 @@ async def on_member_join(member):
             break
     await client.add_roles(member, role)
 
-
 @client.event
 async def on_ready():
     print("login")
-
     print(client.user.name)
-
     print(client.user.id)
-
     print("------------------")
-
     await client.change_presence(game=discord.Game(name='test', type=1))
 
 @client.event
